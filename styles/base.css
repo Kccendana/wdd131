@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    --color1: #fef4ea;
+    --fontcolor: #532822;
+    --color2: #ff854a;
+    --color3: #43a574;
+    --color4: #ffD05C;
+}
+header {
+    background-color: var(--fontcolor);
+    display: grid;
+    place-items: center;
+    padding: 0.5em;
+}
+
+header h1 {
+    color: #fef4ea;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.name {
+    color: #ffD05C;
+}
+nav{
+    margin: 0;
+    background-color: #ff854a;
+    text-align: left;
+}
+.navi{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12%;
+    font-size: .9rem;
+}
+.navi a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: var(--color1);
+	font-weight: 500;
+	transition: 0.5s;
+}
+.navi a:hover {
+	color: var(--color1);
+	background-color: var(--fontcolor);
+}
+.navi .active{
+    color: white;
+}
+
+body {
+    background-color: var(--color1);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 1em 12%;
+    column-gap: 1em;
+    color: #532822;
+}
+.card h2 {
+    text-align: center;
+    background-color: var(--fontcolor);
+    color: var(--color1);
+    padding: 0.25em;
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+    font-weight: 500;
+    font-size: 1.25em;
+}
+
+.card {
+    border-radius: 1.5em;
+    border: 0.05em solid var(--fontcolor);
+}
+
+.aboutMeInfo {
+    padding: 1em;
+    display: flex;
+    gap: 1.25em;
+}
+
+.aboutMeInfo img {
+    width: 15em;
+}
+
+.country h3 {
+    text-align: center;
+    padding: 0.25em 6em;
+    border-bottom: 1.5px solid var(--fontcolor);
+    width: 90%;
+    margin: auto;
+    margin-bottom: 1em;
+}
+
+.flag {
+    display: flex;
+    gap: 1.5em;
+    padding: 1em;
+}
+.flag figure img {
+    width: 15em;
+}
+
+.flag figure figcaption {
+    font-size: 0.85em;
+    font-style: italic;
+}
+
+.card ul {
+    padding: 20% 1.5em;
+    list-style: disc;
+}
+
+.card ul li {
+    list-style: disc;
+    padding: 0.25em;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: var(--fontcolor);
+    color: var(--color1);
+}
+.lastModif {
+    color: var(--color4);
+}
