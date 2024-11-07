@@ -39,7 +39,7 @@ nav{
     margin: 0;
     display: flex;
     justify-content: space-between;
-    padding: 0 12%;
+    padding: 0 18%;
     font-size: .9rem;
 }
 .navi a {
@@ -66,9 +66,10 @@ body {
 main {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    padding: 1em 12%;
+    max-width: 75em;
     column-gap: 1em;
     color: #532822;
+    margin: 1em auto;
 }
 .card h2 {
     text-align: center;
