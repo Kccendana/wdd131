@@ -17,6 +17,7 @@
 body {
     background-color: var(--color1);
     min-width: 426px;
+    font-family: 'Poppins', sans-serif;
 }
 
 header {
