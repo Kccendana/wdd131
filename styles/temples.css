@@ -108,6 +108,7 @@ img {
 
 figcaption {
     text-align: center;
+    color: var(--fontcolor);
 }
 
 footer {
