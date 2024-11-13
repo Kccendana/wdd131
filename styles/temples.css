@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    --color1: #fef4ea;
+    --fontcolor: #532822;
+    --color2: #ff854a;
+    --color3: #43a574;
+    --color4: #ffD05C;
+}
+
+body {
+    background-color: var(--color1);
+    min-width: 426px;
+}
+
+header {
+    background-color: var(--fontcolor);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+}
+
+header h1 {
+    color: var(--color1);
+    font-size: 1.25em;
+    padding: 0.5em;
+}
+.nav-button {
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    height: 30px;
+    justify-content: space-around;
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+    cursor: pointer;
+}
+
+.ham {
+    width: 100%;
+    height: 4px;
+    background-color: var(--color1);
+    border-radius: 2px;
+}
+.navi {
+    display: none;
+}
+.navi.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 2.5em;
+    right: 0;
+    background-color: var(--fontcolor);
+    width: 100%;
+    text-align: center;
+}
+
+.nav-button.close .ham:nth-child(2) {
+    opacity: 0;
+  }
+  
+.nav-button.close .ham:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+  
+.nav-button.close .ham:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+.navi li a {
+    text-decoration: none;
+    color: var(--color1);
+    padding: 0.5em;
+    display: block;
+}
+.navi li a:hover{
+    background-color: #43a574;
+}
+
+h2.title {
+    text-align: center;
+    margin-top: 1em;
+    color: var(--fontcolor);
+}
+
+.cards-container {
+    margin: 1em auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    place-items: center;
+    gap: 2em;
+    padding: 2em;
+}
+
+img {
+    width: 100%;
+}
+
+figcaption {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: var(--fontcolor);
+    color: var(--color1);
+}
