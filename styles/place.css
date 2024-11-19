@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    --color1: #000080;
+    --color2:#a90001;
+    --color3:#afa8ba;
+    --color4: #f9f871;
+}
+img{
+    width: 100%;
+}
+body{
+    background-color: var(--color2);
+    color: white;
+    text-align: center;
+}
+header{
+    height: 5em;
+    background-color: var(--color1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer {
+    text-align: center;
+    padding: 1em;
+    color: white;
+    background-color: var(--color1);
+}
+/* for Large-view */
+@media only screen and (min-width:769px){
+
+}
