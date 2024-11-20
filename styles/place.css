@@ -2,37 +2,100 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    list-style: none;
     font-family: "Poppins", sans-serif;
 }
 
 :root{
-    --color1: #000080;
-    --color2:#a90001;
-    --color3:#afa8ba;
-    --color4: #f9f871;
+    --color1: #f3eed9;
+    --color2: #9b001d;
+    --color: #af6b78;
+    --white:#ffffff98;
 }
 img{
-    width: 100%;
+    max-width: 100%;
 }
 body{
-    background-color: var(--color2);
-    color: white;
+    background-color: var(--color1);
+    color: black;
     text-align: center;
 }
 header{
-    height: 5em;
-    background-color: var(--color1);
+    padding: 1em;
+    background-color: var(--color2);
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #ffffff;
+    border-bottom: 1em solid var(--color);
+}
+.heading_con img {
+    width: 5em;
+}
+.data_heading {
+    font-size: 1.25em;
+}
+span {
+    font-size: 0.9em;
+}
+span.label {
+    font-weight: 500;
+}
+.weather_con {
+    margin-top: 0.5em;
+}
+
+.data_container {
+    padding: 1em;
 }
 footer {
     text-align: center;
     padding: 1em;
     color: white;
-    background-color: var(--color1);
+    background-color: var(--color2);
 }
 /* for Large-view */
 @media only screen and (min-width:769px){
+    .hero img{
+        width: 100vw;
+        height: 80vh;
+        object-fit: cover;
+    }
+    .heading_con img{
+        display: none;
+    }
+    .hero {
+        position: relative;
+    }
+    .data_container{
+        position: absolute;
+        background-color: var(--white);
+    }
+    .data_heading {
+        font-size: 1.25em;
+        background-color: var(--color);
+        padding: .25em 1em;
+        margin-left: -1.5em;
+        text-align: left;
+    }
+    .data_details{
+        top: 2em;
+        left: 2em;
+    }
 
+    .weather_con{
+        bottom: 2em;
+        right: 2em;
+    }
+    h3.data_heading.weather_heading {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    h3.weather_heading::after{
+        content: url('../images/sunny_cloudy.svg'); 
+        margin-left: 10px;
+        width: 2em;
+        background-repeat: no-repeat;
+    }
 }
