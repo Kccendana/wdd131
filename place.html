@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Katherine Cendana" />
-    <meta name="description" content="Explore the Temple Album with Katherine Cendana, covering essential skills in HTML, CSS, JavaScript, and responsive design for creating dynamic, user-friendly websites. Learn about key web development concepts, best practices, and tools for building visually engaging and functional web pages">
-    <title>WDD 131 - Temple Album</title>
+    <meta name="description" content="Explore Japan with Katherine Cendana, covering essential skills in HTML, CSS, JavaScript, and responsive design for creating dynamic, user-friendly websites. Learn about key web development concepts, best practices, and tools for building visually engaging and functional web pages">
+    <title>WDD 131 - Place</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -14,16 +14,73 @@
 </head>
 <body>
     <header>
-        <h1 class="logo">Japan</h1>  
+        <h1 class="header_title">Japan</h1>  
     </header>
     <main>
-        <div class="hero">
+        <section class="hero">
             <picture>
-                <source media="(max-width: 400px)" srcset="images/castle_in_autumn_small.webp">
-                <source media="(min-width: 401px)" srcset="images/castle_in_autumn_large.webp">
-                <img src="images/castle_autumn.webp" alt= "castle in autumn">
-            </picture>
-        </div>
+                <source media="(min-width:650px)" srcset="images/castle_in_autumn_large.webp">
+                <source media="(min-width:465px)" srcset="images/castle_in_autumn_small.webp">
+                <img src="images/castle_in_autumn_large.webp" alt="castle in autumn">
+          </picture>
+          <div class="data_container data_details">
+            <h2 class="data_heading">Data</h2>
+            <div class="label_con">
+                <span class="label">Area:</span>
+                <span class="data">	377,975 sq km</span> 
+            </div>
+            <div class="label_con">
+                <span class="label">Population:</span>
+                <span class="data">123,970,000</span>
+            </div>
+            <div class="label_con">
+                <span class="label">Capital:</span>
+                <span class="data">Tokyo</span>
+            </div>
+            <div class="label_con">
+                <span class="label">Languages:</span>
+                <span class="data">Japanese</span>
+            </div>
+            <div class="label_con">
+                <span class="label">Currency:</span>
+                <span class="data">Japanese yen(JPY)</span>
+            </div>
+            <div class="label_con">
+                <span class="label">Time Zone:</span>
+                <span class="data">UTC+9</span>
+            </div>
+            <div class="label_con">
+                <span class="label">Calling code:</span>
+                <span class="data">+81</span>
+            </div>
+            <div class="label_con">
+                <span class="label">Internet TLD:</span>
+                <span class="data">.jp</span>
+            </div>
+          </div>
+          <div class="data_container weather_con">
+            <div class="heading_con">
+                <h3 class="data_heading weather_heading">Weather</h3>
+                <img src="images/sunny_cloudy.svg" alt="sunny cloudy">
+            </div>
+            <div class="label_con">
+                <span class="label">Temperature:</span>
+                <span class="temp">57°F</span> 
+            </div>
+            <div class="label_con">
+                <span class="label">Conditions:</span>
+                <span class="data">Partly Cloudy</span>
+            </div>
+            <div class="label_con">
+                <span class="label">Wind:</span>
+                <span class="windSpeed">5 km/hr</span>
+            </div>
+            <div class="label_con">
+                <span class="label">Wind Chill:</span>
+                <span class="windChill">9.8°F</span>
+            </div>
+          </div>
+        </section>
     </main>
     <footer>
         <p>&copy; <span id="year"></span>🌸 Katherine Cendana 🌸 Philippines</p>
