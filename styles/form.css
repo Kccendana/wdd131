@@ -65,7 +65,7 @@ align-items: center;
 width: 160px;
 flex-direction: row-reverse;
 justify-content: space-between;
-margin: 40px auto;
+margin: 0.25em auto;
 position: relative;
 }
 /* hide the inputs */
@@ -122,4 +122,14 @@ header, footer {
     height: 87vh;
     padding-top: 10em;
     text-align: center;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: 0.75em;
+}
+
+fieldset.feature label {
+    font-weight: 400;
 }
