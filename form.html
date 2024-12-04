@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Katherine Cendana" />
+    <meta name="description" content="Explore the Product Review Form with Katherine Cendana, covering essential skills in HTML, CSS, JavaScript, and responsive design for creating dynamic, user-friendly websites. Learn about key web development concepts, best practices, and tools for building visually engaging and functional web pages">
+    <title>WDD 131 - Product Review Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">  
+    <script  defer src="scripts/form.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review Form</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get">
+            <!-- Product Name -->
+             <div class="container">
+                <label for="product-name">Product Name</label>
+                <select id="product-name" name="product-name" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                    <!-- Options populated dynamically -->
+                </select>
+             </div>
+
+            <!-- Overall Rating -->
+            <fieldset>
+                <legend>Overall Rating</legend>
+                <div class="star-rating">
+                    <input type="radio" name="stars" id="star-a" value="5"/>
+                    <label for="star-a"></label>
+              
+                    <input type="radio" name="stars" id="star-b" value="4"/>
+                    <label for="star-b"></label>
+                
+                    <input type="radio" name="stars" id="star-c" value="3"/>
+                    <label for="star-c"></label>
+                
+                    <input type="radio" name="stars" id="star-d" value="2"/>
+                    <label for="star-d"></label>
+                
+                    <input type="radio" name="stars" id="star-e" value="1"/>
+                    <label for="star-e"></label>
+              </div>              
+            </fieldset>
+
+            <!-- Date of Installation -->
+            <div class="container">
+                <label for="installation-date">Date of Installation</label>
+                <input type="date" id="installation-date" name="installation-date" required>
+            </div>
+            <!-- Useful Features -->
+            <fieldset>
+                <legend>Useful Features</legend>
+                <label for="feature-1">
+                    <input type="checkbox" id="feature-1" name="features" value="Feature 1"> Feature 1
+                </label>
+                <label for="feature-2">
+                    <input type="checkbox" id="feature-2" name="features" value="Feature 2"> Feature 2
+                </label>
+                <label for="feature-3">
+                    <input type="checkbox" id="feature-3" name="features" value="Feature 3"> Feature 3
+                </label>
+            </fieldset>
+
+            <!-- Written Review -->
+             <div class="container"></div>
+             <div class="container">
+                <label for="written-review">Written Review</label>
+                <textarea id="written-review" name="written-review" rows="5"></textarea>   
+             </div>
+            
+             <div class="container">
+                 <!-- User Name -->
+                <label for="user-name">Your Name</label>
+                <input type="text" id="user-name" name="user-name">
+             </div>
+           
+            <!-- Submit Button -->
+            <input type="submit" value="Submit Review">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span>🌸 Katherine Cendana 🌸 Philippines</p>
+        <p class="lastModif">Last modified: <span id="lastModif"></span></p>
+    </footer>
+</body>
+</html>
