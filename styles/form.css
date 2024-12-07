@@ -130,8 +130,22 @@ fieldset {
     display: flex;
     flex-direction: column;
     padding: 0.75em;
+    gap: 0.5em;
 }
 
 fieldset.feature label {
     font-weight: 400;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 0.75em;
+}
+
+input[type="checkbox"] {
+    width: 1.5em;
+    height: 1.5em;
+    accent-color: var(--fontcolor);
+    margin-bottom: 0;
 }
