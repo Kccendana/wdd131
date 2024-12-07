@@ -13,7 +13,9 @@
     --color3: #43a574;
     --color4: #ffD05C;
 }
-
+body {
+    min-width: 388px;
+}
 main {
     padding: 20px;
     max-width: 600px;
