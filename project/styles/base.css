@@ -1,0 +1,253 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root{
+    --color1: #6f0000;
+    --headfontcolor: #6C2F12    ;
+    --color4: #EFECE3;
+    --color2: #F0A027;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Merriweather", serif;
+    color: var(--headfontcolor);
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background-color: var(--color4);
+    min-width: 425px;
+}
+header {
+    height: 4em;
+
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    padding: 1em;
+}
+.logo {
+    width: 40px;
+}
+
+
+.logo.hidden {
+    visibility: hidden;
+}
+
+.nav-button {
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    height: 30px;
+    justify-content: space-around;
+    position: absolute;
+    top: 1.25em;
+    right: 1.25em;
+    cursor: pointer;
+}
+
+.ham {
+    width: 100%;
+    height: 4px;
+    background-color: var(--headfontcolor);
+    border-radius: 2px;
+}
+.navi {
+    display: none;
+}
+.navi.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 3.5em;
+    right: 0;
+    background-color: var(--color4);
+    width: 100%;
+    text-align: center;
+}
+
+.nav-button.close .ham:nth-child(2) {
+    opacity: 0;
+  }
+  
+.nav-button.close .ham:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+  
+.nav-button.close .ham:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+.navi li a {
+    text-decoration: none;
+    color: var(--color1);
+    padding: 0.5em;
+    display: block;
+}
+.navi li a:hover{
+    border-top: 1px solid var(--headfontcolor);
+}
+
+.active {
+    border-bottom: 2px solid var(--headfontcolor);
+}
+
+/* section */
+
+section.bk-section {
+    padding: 1em;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+section.bk-section .section-title {
+    font-size: 2em;
+}
+section.bk-section img {
+    border-radius: 0.5em 0.5em 0 0;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+a.button {
+    padding: 0.5em;
+    width: fit-content;
+    background-color: var(--color1);
+    border: none;
+    color: white;
+    border-radius: 0.5em;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* menu.html */
+.head {
+    text-align: center;
+}
+
+.menu_lists li {
+    display: block;
+    padding: 0.75em 1em;
+    border-bottom: 1px solid var(--headfontcolor);
+    cursor: pointer;
+}
+
+.menu_lists li.active_list, .menu_lists li:hover {
+    background-color: var(--color2);
+}
+
+.menu-container {
+    padding: 0 1.5em;
+    border-radius: 0.5em;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+}
+
+
+.cards-container {
+    margin: 1em auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    gap: 2em;
+    padding: 2em;
+}
+
+section.cards {
+    width: 18em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0.75em;
+    border: 0.25px solid #ccc;
+    height: 21.8em;
+    color: var(--fontcolor);
+    border-radius: 0.5em;
+}
+section.cards:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cards img {
+    border-radius: .5em 0.5em 0 0;
+    height: 14em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Inquiries */
+.form-head {
+    text-align: center;
+}
+
+.form_main {
+    padding: 1em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    padding: 20px;
+    max-width: 600px;
+    margin: 1em auto;
+    border-radius: 5px;
+    border: 1px solid var(--headfontcolor);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background: var(--color1);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-weight: 500;
+}
+
+/* thank you */
+.thanks-con {
+    height: 87vh;
+    padding-top: 10em;
+    text-align: center;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1em;
+    margin-top: 1em;
+    border-top: 0.5px solid;
+    color: var(--headfontcolor);
+}
