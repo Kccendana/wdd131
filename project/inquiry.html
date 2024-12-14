@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Katherine Cendana" />
+    <meta name="description" content="Contact us for all your Bahay Kubo inquiries. Learn about traditional Filipino house designs, materials, customization options, pricing, and more. Let us help you build your dream Bahay Kubo today!">
+
+    <title>Bahay-kubo Inquiries</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">    
+    <script  defer src="scripts/index.js"></script>
+<body>
+    <header>
+        <nav>
+            <img src="images/bahay_kuboLogo.svg" alt="" class="logo">
+            <a href="#"  class="nav-button" id="nav-button">
+                <span class="ham"></span>
+                <span class="ham"></span>
+                <span class="ham"></span>   
+            </a>
+            <ul class="navi">
+                <li class="navMenu"><a href="index.html">Home</a></li>
+                <li class="navMenu"><a href="menu.html">Menu</a></li>
+                <li class="navMenu"><a class="active" href="inquiry.html">Inquiries</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="form_main">
+        <h1 class="form-head">Inquiries</h1>
+        <form action="thank_you.html" method="get">
+            <div class="container">
+                  <!-- User Name -->
+                 <label for="user-name">Your Name</label>
+                 <input type="text" id="user-name" name="user-name">
+              </div>
+            <div class="container">
+                  <!-- contact number -->
+                 <label for="contact_number">Phone Number</label>
+                 <input type="text" id="contact_number" name="user-name">
+              </div>
+ 
+             <!-- Written Review -->
+              <div class="container"></div>
+              <div class="container">
+                 <label for="message">Message</label>
+                 <textarea id="message" name="message" rows="5"></textarea>   
+              </div>
+             
+              
+             <!-- Submit Button -->
+             <input type="submit" value="Inquire">
+         </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span>🌸 Katherine Cendana 🌸 Philippines</p>
+        <p class="lastModif">Last modified: <span id="lastModif"></span></p>
+    </footer>
+</body>
+</html>
